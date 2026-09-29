@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <title> Trap | SoundHate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Descubra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/album">Álbuns</a>
+</li>
+    <li class="nav-item">
+  <a class="nav-link" href="/singles">Singles</a>
+</li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gêneros
+          </a>
+          <ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/trap">Trap</a></li>
+   <li><a class="dropdown-item" href="/R&B">R&B</a></li>
+  <li><a class="dropdown-item" href="/rap">Rap</a></li>
+          </ul>
+        </li>
+      </ul>
+<form class="d-flex" role="search" action="/buscar" method="GET">
+  <input
+    class="form-control me-2"
+    type="search"
+    name="q"
+    placeholder="Pesquisar"
+    aria-label="Pesquisar"
+  >
+
+  <button class="btn btn-outline-success" type="submit">
+    ⌕
+  </button>
+</form>
+</nav>
+
+<body> 
+
+<h2 class="mb-4">
+  Trap
+</h2>
+
+<div class="container mt-5">
+  <div class="row">
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8tsrTuNB84FeBPJGz3Nljtar4ecYV6W6UbTdf2FSOA&s=10">
+
+    <div class="card-body">
+      <h5 class="card-title">Caos</h5>
+      <p class="card-text">Alee</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>9/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCaos">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5orzSfJkc7xS43GpPulP50YdDtml8DcBVokhKydtMQ&s=10">
+
+    <div class="card-body">
+      <h5 class="card-title">Free vetin</h5>
+      <p class="card-text">Leviano</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>9/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFreeVetin">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+ <div class="modal fade" id="modalCaos" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Caos</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o album</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalFreeVetin" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Free vetin</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o single</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>

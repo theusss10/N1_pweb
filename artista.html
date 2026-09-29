@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <title>Albuns | SoundHate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Descubra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="/album">Álbuns</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/singles">Singles</a>
+</li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gêneros
+          </a>
+          <ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/trap">Trap</a></li>
+   <li><a class="dropdown-item" href="/R&B">R&B</a></li>
+  <li><a class="dropdown-item" href="/rap">Rap</a></li>
+          </ul>
+        </li>
+      </ul>
+<form class="d-flex" role="search" action="/buscar" method="GET">
+  <input
+    class="form-control me-2"
+    type="search"
+    name="q"
+    placeholder="Pesquisar"
+    aria-label="Pesquisar"
+  >
+
+  <button class="btn btn-outline-success" type="submit">
+    ⌕
+  </button>
+</form>
+    </div>
+  </div>
+</nav>
+
+<div style="display: flex; align-items: flex-start; gap: 30px; margin-top: 30px;">
+
+  <div class="card" style="width: 28rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8fUu1f9ihIHGIc9IO4Io6asJIhF3W43tenfIEFLJta1hEOKeUr52xSYiAZVyPBssOqNY18PR4MX3vP2JcB6-yZ7f7KWNe2QRb1iIVL8YO&s=10" class="card-img-top" alt="...">
+
+<div class="card-body">
+  <h5 class="card-title">Tyler, the creator</h5>
+</div>
+
+<ul class="list-group list-group-flush">
+</ul>
+
+  </div>
+
+  <div style="padding: 20px; max-width: 500px;">
+
+<h2 class="mb-4">
+  Informações do artista
+</h2>
+
+<p>
+  <strong>Nota:</strong>
+  9/10
+</p>
+
+<p>
+  <strong>Gênero:</strong>
+  Hip-Hop / Rap / R&B
+</p>
+
+<p>
+  <strong>Descrição:</strong><br>
+  Tyler, The Creator é um rapper, cantor, produtor e designer
+  americano conhecido por seu estilo criativo, suas produções
+  marcantes e sua mistura de diferentes gêneros musicais.
+</p>
+
+<button 
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#modalArtista">
+  Avalie
+</button>
+
+  </div>
+
+</div>
+
+<br>
+
+<h2 class="mb-4">
+  Álbuns
+</h2>
+
+<br>
+
+<div class="container mt-5">
+  <div class="row">
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://upload.wikimedia.org/wikipedia/pt/e/e9/Tyler_The_Creator_-_Igor.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original">
+
+    <div class="card-body">
+     <h5 class="card-title">
+    <a href="/igor" style="text-decoration: none; color: inherit;">
+        Igor
+    </a>
+</h5>
+      <p class="card-text">Tyler, the Creator</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>10/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIgor">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWlKt-V8-CppBPEwqmg5Tm3OGSOiB8BOkxGMfZ6VQw3Q&s=10">
+
+    <div class="card-body">
+      <h5 class="card-title">Chromakopia</h5>
+      <p class="card-text">Tyler, the creator</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>8/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalChromakopia">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRerws3TjEuXBQKlCHpZAcF1haxKW7Nvm3_66hdSGN_Q&s=10">
+
+    <div class="card-body">
+      <h5 class="card-title">Flower boy</h5>
+      <p class="card-text">Tyler, the creator</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>8/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFlowerBoy">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d3/Call_Me_If_You_Get_Lost_album_cover.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original">
+
+        <div class="card-body">
+          <h5 class="card-title">Call me if you get lost</h5>
+          <p class="card-text">Tyler, the Creator</p>
+
+          <p class="mb-2">
+            <strong>Nota: </strong>
+            <span>9/10</span>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCallMe">
+            Avalie
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+
+        <img src="https://m.media-amazon.com/images/I/71P2Su0fu2L._UF1000,1000_QL80_.jpg">
+
+        <div class="card-body">
+          <h5 class="card-title">Call me if you get lost: the state sale</h5>
+          <p class="card-text">Tyler, the creator</p>
+
+          <p class="mb-2">
+            <strong>Nota: </strong>
+            <span>9/10</span>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStateSale">
+            Avalie
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4SiYRo5kMaeUFXI_VcTrxxhs_mDiqaJ2YM_BKuqLc3A&s=10">
+
+        <div class="card-body">
+          <h5 class="card-title">Wolf</h5>
+          <p class="card-text">Tyler, the creator</p>
+
+          <p class="mb-2">
+            <strong>Nota: </strong>
+            <span>6/10</span>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWolf">
+            Avalie
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+<br>
+
+<h2 class="mb-4">
+  Singles
+</h2>
+
+<div class="container mt-5">
+  <div class="row">
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPFC1RpChST7M88GFTxwyHMewwnCqMNZhGDbj6XQ6-A&s=10">
+
+    <div class="card-body">
+      <h5 class="card-title">Best interest</h5>
+      <p class="card-text">Tyler, the Creator</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>10/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBestInterest">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDGjRq6egwS-E4DkzZwZWczuJzLUtyJnYGpP80tSaAQ&s=10">
+
+    <div class="card-body">
+      <h5 class="card-title">That guy</h5>
+      <p class="card-text">Tyler, the creator</p>
+
+      <p class="mb-2">
+        <strong>Nota: </strong>
+        <span>8/10</span>
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalThatGuy">
+        Avalie
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalArtista" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Tyler, The Creator</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o artista</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+      Cancelar
+    </button>
+
+    <button type="button" class="btn btn-primary">
+      Enviar avaliação
+    </button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalIgor" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Igor</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o álbum</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div
+
+</div>
+</div>
+
+<div class="modal fade" id="modalChromakopia" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Chromakopia</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o álbum</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalFlowerBoy" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Flower Boy</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o álbum</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalCallMe" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Call Me If You Get Lost</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o álbum</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalStateSale" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Call Me If You Get Lost: The Estate Sale</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o álbum</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalWolf" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Wolf</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o álbum</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalBestInterest" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar Best Interest</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o single</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalThatGuy" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  <div class="modal-header">
+    <h5 class="modal-title">Avaliar That Guy</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <div class="modal-body text-center">
+    <h5>Digite sua nota para o single</h5>
+    <p class="text-muted">A nota deve estar entre 0 e 10.</p>
+    <input type="number" class="form-control text-center fs-4" min="0" max="10" step="0.5" placeholder="0 - 10">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary">Enviar avaliação</button>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>
